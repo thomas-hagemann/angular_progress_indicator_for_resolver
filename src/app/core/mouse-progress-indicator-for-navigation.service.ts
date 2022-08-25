@@ -1,4 +1,5 @@
-import { Injectable } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Inject, Injectable } from '@angular/core';
 import {
   NavigationCancel,
   NavigationEnd,
@@ -10,11 +11,11 @@ import { filter } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class MouseProgressIndicatorForNavigationService {
-  constructor(private router: Router) {
+  constructor(private router: Router, @Inject(DOCUMENT) doc: Document) {
     /* add progress class to body on NavigationStart */
     this.router.events
       .pipe(filter((event) => event instanceof NavigationStart))
-      .subscribe(() => document.body.classList.add('progress'));
+      .subscribe(() => doc.body.classList.add('progress'));
     /* remove progress class to body when navigation process is stoped */
     this.router.events
       .pipe(
@@ -25,6 +26,6 @@ export class MouseProgressIndicatorForNavigationService {
             event instanceof NavigationCancel
         )
       )
-      .subscribe((e) => document.body.classList.remove('progress'));
+      .subscribe((e) => doc.body.classList.remove('progress'));
   }
 }
