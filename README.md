@@ -1,6 +1,6 @@
 # Angular: Show mouse cursor progress indicator while navigation is in progress
 
-[Demo project](stackblitz.com/edit/angular-ivy-hszzqy)
+[Demo project](https://stackblitz.com/edit/angular-ivy-hszzqy)
 Show process indicator on the mouse cursor, while data is loaded via a route resolver.
 
 This Projects has two routes (a, b) both of which use a data-resolver that takes 3 seconds to resolve.
