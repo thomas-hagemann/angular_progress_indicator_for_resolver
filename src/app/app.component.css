@@ -9,7 +9,7 @@ div {
 
 .mouseTest {
   display: inline-block;
-  width: 200px;
+  width: 240px;
   border: 1px solid rebeccapurple;
   background: #663399a0;
   color: white;
@@ -17,9 +17,9 @@ div {
 
 /* this class is more specific than ".progress *" but less "important". Therefor the mouse cursor is 'progress' */
 .show {
-  cursor: move;
+  cursor: crosshair;
 }
-/* this class is more specific than ".progress *" and also important. Threrfor the mouse cursor is 'move' */
+/* this class is more specific than ".progress *" and also important. Threrfor the mouse cursor is 'crosshair' */
 .doNotShow {
-  cursor: move !important;
+  cursor: crosshair !important;
 }

@@ -1,14 +1,16 @@
 <nav>
-  <a routerLink="a">Site A</a><br />
-  <a routerLink="b">Site B</a>
+  <a routerLink="a">Site A (takes 3 seconds to load)</a><br />
+  <a routerLink="b">Site B (takes 3 seconds to load)</a>
 </nav>
 
 <div class="mouseTest show">
   Progress indicator will show if mouse hovers this while navigating.
+  <pre>css: {{ '{' }} cursor: crosshair; {{ '}' }}</pre>
 </div>
 
 <div class="mouseTest doNotShow">
   Progress indicator will show if mouse hovers this while navigating.
+  <pre>css: {{ '{' }} cursor: crosshair !important; {{ '}' }}</pre>
 </div>
 
 <div class="info">
