@@ -1,6 +1,9 @@
 /* Add application styles & imports to this file! */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-body.progress,
-body.progress * {
+.progress,
+.progress * {
   cursor: progress !important;
 }

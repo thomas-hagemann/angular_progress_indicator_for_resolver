@@ -1,3 +1,25 @@
-p {
-  font-family: Lato;
+div {
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+.info {
+  border: 1px solid orange;
+}
+
+.mouseTest {
+  display: inline-block;
+  width: 200px;
+  border: 1px solid rebeccapurple;
+  background: #663399a0;
+  color: white;
+}
+
+/* this class is more specific than ".progress *" but less "important". Therefor the mouse cursor is 'progress' */
+.show {
+  cursor: move;
+}
+/* this class is more specific than ".progress *" and also important. Threrfor the mouse cursor is 'move' */
+.doNotShow {
+  cursor: move !important;
 }

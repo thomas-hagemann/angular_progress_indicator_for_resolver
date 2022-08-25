@@ -3,6 +3,19 @@
   <a routerLink="b">Site B</a>
 </nav>
 
-<div></div>
+<div class="mouseTest show">
+  Progress indicator will show if mouse hovers this while navigating.
+</div>
+
+<div class="mouseTest doNotShow">
+  Progress indicator will show if mouse hovers this while navigating.
+</div>
+
+<div class="info">
+  Show a mouse cursor progress indicatore as long as the angular routing process
+  has started but not yet terminated. <br />
+  The routing progress will be streched, because of a data resolver which will
+  take 3 seconds to resolve.
+</div>
 
 <router-outlet></router-outlet>
